@@ -9,10 +9,15 @@
     font-weight: 200;
 }
 .header{
+    z-index: 999999 !important;
     width: 100%;
     background-color: black;
     height: 7vh;
-    position: fixed;
+
+    /* Menu stays at top */
+    position: sticky;
+    top: 0;
+
     display: flex;
 }
 .first-col{
@@ -44,6 +49,39 @@
 .menu ul li a{
     color: white;
     text-decoration: none;
-    
+    transition: .5s;
+}
+.menu ul li a:hover{
+    color: rgb(222, 55, 205);
+    text-decoration: none;
+    transition: .5s ease-in-out;
 }
 
+/*? Footer */
+.footer{
+    height: 5vh;
+    width: 100%;
+    background-color: black;
+
+    position: static;
+    bottom: 0;
+}
+
+
+/** HOME */
+.hero{
+    background-image: url(../img/el-colibri-de-colores-vividos-en-la-naturaleza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+}
+.title-home{
+    color: white;
+    display: flex;
+    align-items: center;
+
+    font-size: 10rem;
+}
