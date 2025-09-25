@@ -1,67 +1,159 @@
 @font-face {
-    font-family: "DAZN";
-    src: url(../resources/DAZN.woff2);
+  font-family: "dazn";
+  src: url("/daznPractica/resources/DAZN.woff2") format("woff2");
 }
 
-*{
-    margin: 0;
-    padding: 5px;
-    box-sizing: border-box;
-    background-color: #0C161C;
+* {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #0c161c;
 
-    color: #fff;
-    font-family: "DAZN",Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-family: "dazn", sans-serif;
 }
 
 /* CABECERA */
-header{
-    background-color: transparent;
+header {
+  background-color: transparent;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-.logo{
-    max-width: 5%;
+.logo {
+  max-width: 3%;
 }
-.boton{
-    background-color: transparent;
-    width: 100%;
-    display: flex;
-    justify-content: right;
+.boton {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: right;
 }
-.boton a{
-    text-align: center;
+.boton a {
+  text-align: center;
 
-    background-color: #3C4549;
+  background-color: #3c4549;
 
-    padding: 10px;
+  padding: 17px;
 
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-
-    width: 10%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-shadow: 0.5px 0 white, -0.5px 0 white;
 }
 
 /* SECCION PRINCIPAL */
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main {
+  display: flex;
+  align-self: center;
+  height: 70vh;
 }
-h2.title{
-    font-size: 1.2rem;
-    word-spacing: 5px;
+.titulos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
- 
+.titulos h1 {
+  font-weight: normal;
+  font-size: 2.8rem;
+  text-shadow: 1px 0 white, -1px 0 white;
+}
+.titulos h1,
+.titulos h2 {
+  display: flex;
+  justify-content: center;
+}
+.titulos h2 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
 /* FORMULARIO LOGIN */
-form{
-    display: flex;
-    flex-direction: column;
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-input{
-    background-color: transparent;
-    border: 0;
-    border-bottom:2px gray !important;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+  gap: 100px;
+
+  margin-top: 30px;
+}
+input {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #3c4549;
+
+  font-size: 1.4rem;
+  transition: .5s;
+
+  &:focus {
+    outline: 0;
+    border-bottom: 1px solid #f7fb1a;
+  }
+}
+form a {
+  text-align: center;
+  margin-top: -40px;
+  font-size: 1.5rem;
+}
+.logInButton {
+  background-color: #f7fb1a;
+  color: #0c161c;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: -50px;
+
+  letter-spacing: 1px;
+  text-shadow: 1px 0 black, -1px 0 black;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  gap: 5px;
+}
+.idiomas {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.idiomas a {
+  text-decoration: none;
+  transition-duration: 0.5s;
+  &:hover {
+    color: #f7fb1a;
+  }
+}
+hr {
+  border: 0;
+  border-bottom: 1px solid #3c4549;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links a {
+  padding: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: #f7fb1a;
+  }
 }
