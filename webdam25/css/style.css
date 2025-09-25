@@ -361,3 +361,21 @@ audio {
 .horario tr td{
     padding: 5px;
 }
+
+
+/* Formularios */
+.formularios{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20%;
+}
+
+.login{
+  min-width: 40%;
+}
+.login legend{
+  margin-bottom: 17px;
+}
+.login fieldset input{
+  margin-bottom: 17px;
+}

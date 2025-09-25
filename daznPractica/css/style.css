@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "DAZN";
+    src: url(../resources/DAZN.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #0C161C;
+
+    color: #fff;
+    font-family: "DAZN",Arial, Helvetica, sans-serif;
+}
+
+/* CABECERA */
+header{
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+}
+.logo{
+    max-width: 5%;
+}
+.boton{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.boton a{
+    text-align: center;
+
+    background-color: #3C4549;
+
+    padding: 10px;
+
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+
+    width: 10%;
+}
+
+/* SECCION PRINCIPAL */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2.title{
+    font-size: 1.2rem;
+    word-spacing: 5px;
+}
+ 
+/* FORMULARIO LOGIN */
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background-color: transparent;
+    border: 0;
+    border-bottom:2px gray !important;
+}
