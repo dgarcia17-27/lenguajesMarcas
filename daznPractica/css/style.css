@@ -1,6 +1,27 @@
 @font-face {
-  font-family: "dazn";
-  src: url("/daznPractica/resources/fonts/DAZNTrim_v2.9_normal_400.woff2") format("woff2");
+  font-family: "dazn400";
+  src: 
+    url("/daznPractica/resources/fonts/DAZNTrim_v2.9_normal_400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "dazn600";
+  src: url("/daznPractica/resources/fonts/DAZNTrim_v2.9_normal_600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "dazn800";
+  src: url("/daznPractica/resources/fonts/DAZNTrim_v2.9_normal_800.woff2") format("woff2");
+}
+@font-face {
+  font-family: "dazn400It";
+  src: url("/daznPractica/resources/fonts/DAZNTrim_v2.9_italic_600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "dazn400Cond";
+  src: url("/daznPractica/resources/fonts/DAZNTrimCondensed_v1.0_normal_400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "dazn700Cond";
+  src: url("/daznPractica/resources/fonts/DAZNTrimCondensed_v1.0_normal_700.woff2") format("woff2");
 }
 
 * {
@@ -10,7 +31,7 @@
   background-color: #0c161c;
 
   color: #fff;
-  font-family: "dazn", sans-serif;
+  font-family: "dazn400", sans-serif;
 }
 
 /* CABECERA */
@@ -21,7 +42,7 @@ header {
   align-items: center;
 }
 .logo {
-  max-width: 4%;
+  max-width: 5vh;
 }
 .boton {
   background-color: transparent;
@@ -34,11 +55,11 @@ header {
 
   background-color: #3c4549;
 
-  padding: 17px;
+  padding: 15px;
 
   text-decoration: none;
   font-size: 1rem;
-  font-weight: bolder;
+  font-family: "dazn600";
   letter-spacing: 1px;
 }
 
