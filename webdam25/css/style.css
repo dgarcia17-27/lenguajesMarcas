@@ -346,9 +346,9 @@ audio {
 .dias {
   font-weight: bold;
 }
-.dias td{
-    color: #fff;
-    background-color: burlywood;
+.dias td {
+  color: #fff;
+  background-color: burlywood;
 }
 .horas {
   font-weight: bold;
@@ -358,24 +358,37 @@ audio {
 .horario {
   text-align: center;
 }
-.horario tr td{
-    padding: 5px;
+.horario tr td {
+  padding: 5px;
 }
 
-
 /* Formularios */
-.formularios{
+.formularios {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20%;
 }
 
-.login{
+.login {
   min-width: 40%;
 }
-.login legend{
+.login legend {
   margin-bottom: 17px;
 }
-.login fieldset input{
+.login fieldset input {
   margin-bottom: 17px;
+}
+
+/* MULTIMEDIA */
+.imagenes-multimedia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.imagenes-multimedia img {
+  width: 100%;
+}
+.tit-vidaud {
+  display: flex;
+  justify-content: center;
 }
