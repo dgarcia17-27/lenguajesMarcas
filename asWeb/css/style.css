@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "asBold";
+  src: url("../resources/sourcesanspro-bold-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "asLight";
+  src: url("../resources/sourcesanspro-light-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "asRegular";
+  src: url("../resources/sourcesanspro-regular-webfont.woff2") format("woff2");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "asRegular",Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 13%;
+}
+p{
+    font-family: "asLight",Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+form{
+    margin-top: 4%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #7A7979;
+    padding: 20px 0 8px;
+    width: 72%;
+    font-size: 14px;
+    font-family: "asRegular",Arial, Helvetica, sans-serif;
+    margin-bottom: 6.55%;
+}
+input::after{
+    content: '*';
+    color: red;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.logo{
+    width: 65%;
+    margin-top: 17px;
+    margin-bottom: 5px;
+    padding-left: 2px;
+}
+.logoAs{
+    width: 5%;
+    margin-left: 9px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 76.5vh;
+    width: 64.5%;
+
+    border-top: 2px solid #D8D8D8;
+    background-color: #F4F3F3;
+}
+.cabeceraForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.missPasswd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 18%;
+}
+.redUnderline{
+    font-family: "asBold",Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #CE0000;
+    text-decoration: underline #CE0000;
+    margin-bottom: .7rem;
+}
+.red{
+    font-family: "asLight",Arial, Helvetica, sans-serif;
+    color: #CE0000;
+    font-size: 1rem;
+}
+.btn{
+    border: none;
+    font-family: "asBold",Arial, Helvetica, sans-serif;
+    color: #F4F3F3;
+    letter-spacing: 1.5px;
+}
+.subButton{
+    width: 150px;
+    height: 40px;
+    background-color: #CE0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+}

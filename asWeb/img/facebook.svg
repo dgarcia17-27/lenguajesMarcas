@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs/>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iconos-RRSS-registro">
+            <g id="Group-2">
+                <rect id="Rectangle-328" fill="#3B5998" x="0" y="0" width="45" height="45" rx="22.5"/>
+                <g id="facebook" transform="translate(18.000000, 13.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M6.67916483,3.37846975 L8.98999977,3.37846975 L8.98999977,0 L6.27355003,0 L6.27355003,0.0121834466 C2.98209975,0.127560686 2.30751124,1.95873271 2.24805389,3.88201159 L2.24128339,3.88201159 L2.24128339,5.56905345 L0,5.56905345 L0,8.87759021 L2.24128339,8.87759021 L2.24128339,17.7462865 L5.61902683,17.7462865 L5.61902683,8.87759021 L8.38594762,8.87759021 L8.92044822,5.56905345 L5.62013473,5.56905345 L5.62013473,4.5497863 C5.62013473,3.89979943 6.05714006,3.37846975 6.67916483,3.37846975 Z" id="Shape"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
