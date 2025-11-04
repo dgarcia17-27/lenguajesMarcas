@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Instagram";
+  src: url("/instagramWeb/resources/fonts/InstagramSans.woff")
+    format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Instagram",Arial, Helvetica, sans-serif;
+  background-color: black;
+  justify-content: center;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  width: 70%;
+}
+input{
+  width: 100%;
+  border: 1px solid #555555;
+  border-radius:2px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.padre {
+  height: 100vh;
+  width: 80%;
+}
+.hijo1 {
+  height: 85%;
+  display: flex;
+}
+.nieto1 {
+  height: 100%;
+  width: 60%;
+
+  display: flex;
+  justify-content: right;
+  align-items: center;
+
+  padding-right: 7%;
+}
+.nieto2 {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nieto2 img{
+  margin-bottom: 10%;
+}
+.hijo2 {
+  height: 15%;
+}
+.btnSubmit{
+  border: none;
+  background-color: #4150F7;
+  color: white;
+  border-radius: 10px;
+  margin-top: 3%;
+  padding: 2%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sotoFormulario{
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.sotoFormulario .a{
+  width: 40vw;
+  margin-top: 5px;
+}
+hr{
+  border: 1px solid #262626;
+  height: 1px;
+  border-width: .2px;
+}
+.sotoFormulario .b{
+  color: #A8A8A8;
+  margin: 15px;
+  font-weight: 400;
+  font-size: 1.3rem;
+}

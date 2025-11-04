@@ -72,6 +72,8 @@ input::after{
     align-items: center;
     justify-content: center;
 
+    padding: 10rem !important;
+
     height: 76.5vh;
     width: 64.5%;
 
