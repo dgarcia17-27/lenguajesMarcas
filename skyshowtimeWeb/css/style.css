@@ -1,19 +1,31 @@
 @font-face {
-    font-family: "SkyRegular";
-    src: url(../resources/SharpSansSST-Medium.woff2);
-}
-@font-face {
     font-family: "SkyLight";
     src: url(../resources/SharpSansSST-Book.woff2);
+}
+@font-face {
+    font-family: "SkyRegular";
+    src: url(../resources/SharpSansSST-Medium.woff2);
 }
 @font-face {
     font-family: "SkyBold";
     src: url(../resources/SharpSansSST-Bold.woff2);
 }
+
+/* COLORES CORP. */
+:root{
+    --morado-color: #795fe3;
+    --gris-color: #323538a3;
+    --gris-oscuro: #1D1E20;
+    --gris-claro: #d1d2d3;
+    --blanco-roto: #f4f4f4;
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
     font-family: "SkyRegular",Arial, Helvetica, sans-serif;
 }
 
@@ -22,22 +34,27 @@ header{
     padding: 32px 56px;
     background-color: black;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
+
+/* ------ LOGO ------ */
 .logo img{
-    max-width: 12%;
+    min-width: 4vw;
+    width: 4vw;
 }
+
+/* ------ BOTONES HEADER ------ */
 .botones{
     display: flex;
     justify-content: right;
-    width: 80%;
-    gap: 5%;
-    margin-right: 2%;
+    width: 100%;
+    gap: .7%;
 }
 .botones a{
     font-family: "SkyLight",Arial, Helvetica, sans-serif;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 0.625rem;
     color: white;
     text-align: center;
     letter-spacing: 1px;
@@ -48,10 +65,148 @@ header{
     
 }
 .botones .boton1{
-    background-color: #323538a3;
+    background-color: var(--gris-oscuro);
 }
 .botones .boton2{
-    background-color: #795fe3;
+    background-color: var(--morado-color);
 }
 
+
 /* CUERPO WEB */
+main{
+    background-color: var(--blanco-roto);
+    min-height: 66vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------ TÍTULO ------ */
+main .titulo{
+    padding: 22px 88px;
+    background-color: var(--gris-oscuro);
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+main .titulo div h1{
+    font-family: "SkyBold",Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4rem;
+}
+
+/* ------ FORMULARIO ------ */
+main .formulario{
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+}
+main .formulario form{
+    background-color: white;
+    padding: 52px 32px 32px 32px;
+    border-radius: 8px;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-width: 30.5rem;
+    width: 19vw;
+}
+main .formulario form input[type="email"]{
+    color: var(--gris-oscuro);
+    font-family: "SkyLight";
+    font-size: 1rem;
+
+    border: 1px solid var(--gris-claro);
+    border-radius: 6px;
+
+    padding: 12px 16px;
+}
+main .formulario form input[type="email"]::placeholder{
+    color: var(--gris-oscuro);
+}
+
+main .formulario form input[type="submit"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 20px;
+
+    font-family: "SkyRegular";
+    color: white;
+    letter-spacing: 1px;
+
+    border: none;
+    border-radius: 10000px;
+
+    background-color: var(--morado-color);
+}
+
+
+/* FOOTER */
+footer{
+    height: 27vh;
+    background-color: black;
+    padding: 0 24.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* ------ TEXTO LEGAL ------ */
+.legalesRedes{
+    display: flex;
+}
+.legalesRedes .child1{
+    min-width: 85%;
+    width: 85%;
+}
+.legalesRedes .child1 ul{
+}
+.legalesRedes .child1 ul li{
+    display: inline;
+    
+}
+.legalesRedes .child1 ul li a{
+    text-decoration: none;
+    color: #a4a5a7;
+    font-size: 1rem;
+    padding: 0 10px;
+    transition: .5s;
+}
+.legalesRedes .child1 ul li a:hover{
+    color: white;
+}
+
+.legalesRedes .child2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 30%;
+    gap: 10px;
+}
+.legalesRedes .child2 a{
+    background-color: #65666A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 5px;
+    max-width: 55%;
+}
+.legalesRedes .child2 a:hover{
+    background-color: var(--morado-color);
+}
+
+
+/* ------ TEXTO LEGAL ------ */
+.textoLegal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textoLegal p{
+    color: #a4a5a7;
+    font-size: .75rem;
+}
