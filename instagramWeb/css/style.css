@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Instagram";
-  src: url("/instagramWeb/resources/fonts/InstagramSans.woff")
-    format("woff");
+  src: url("/instagramWeb/resources/fonts/InstagramSans.woff");
 }
 
 * {
@@ -90,4 +89,20 @@ hr{
   margin: 15px;
   font-weight: 400;
   font-size: 1.3rem;
+}
+.facebookLog{
+  display: flex;
+  align-items: center;
+}
+.loginFacebook a{
+  font-family: 'Instagram',Arial, Helvetica, sans-serif;
+  border: none;
+  color: #0966FF;
+  font-weight: bold;
+}
+
+/* FOOTER */
+ul{
+  display: inline;
+  list-style: none;
 }

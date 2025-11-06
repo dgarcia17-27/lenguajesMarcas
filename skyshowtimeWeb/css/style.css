@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "SkyRegular";
+    src: url(../resources/SharpSansSST-Medium.woff2);
+}
+@font-face {
+    font-family: "SkyLight";
+    src: url(../resources/SharpSansSST-Book.woff2);
+}
+@font-face {
+    font-family: "SkyBold";
+    src: url(../resources/SharpSansSST-Bold.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SkyRegular",Arial, Helvetica, sans-serif;
+}
+
+/* CABECERA */
+header{
+    padding: 32px 56px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    max-width: 12%;
+}
+.botones{
+    display: flex;
+    justify-content: right;
+    width: 80%;
+    gap: 5%;
+    margin-right: 2%;
+}
+.botones a{
+    font-family: "SkyLight",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+
+    padding: 8px 16px;
+
+    border-radius: 1000px;
+    
+}
+.botones .boton1{
+    background-color: #323538a3;
+}
+.botones .boton2{
+    background-color: #795fe3;
+}
+
+/* CUERPO WEB */
