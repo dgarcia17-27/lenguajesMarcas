@@ -149,7 +149,7 @@ main .formulario form input[type="submit"]{
 footer{
     height: 27vh;
     background-color: black;
-    padding: 0 24.5%;
+    padding: 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
