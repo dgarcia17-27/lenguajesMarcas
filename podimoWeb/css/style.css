@@ -11,10 +11,151 @@
 }
 
 :root{
-    --morado-principal: #7251EE;
+    --morado-principal: #794cf8;
 }
 
-.header{
-    background-color:#7251EE;
+body{
+    max-height: 100vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+/* Estilos predefinidos input */
+input{
+    width: 100%;
+
+    background-color: #E6E8E9;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 4% 6%;
+
+    margin: 2% 0;
+}
+input::placeholder{
+    transition: .5s ease-in-out;
+}
+input:focus{
+    border: none;
+}
+input:focus::placeholder{
+    transform: translateY(-12px);
+    font-size: .6rem;
+}
+
+/* CABECERA */
+header{
+    height: 10vh;
     width: 100vw;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.226) .5%, transparent 10%);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+}
+header .logo{
+    width: 50%;
+}
+header .logo img{
+    width: 100px;
+}
+header .botones{
+    width: 50%;
+
+    display: flex;
+    justify-content: end;
+
+    gap: 2%;
+}
+
+header .botones a{
+    text-decoration: none;
+    color: black;
+}
+header .botones .btn1, .btn2{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 1% 3%;
+}
+header .botones .btn2{
+    background-color: var(--morado-principal);
+    border: none;
+}
+header .botones .btn2 a{
+    color: #F3F3F3;
+}
+
+/* CUERPO WEB */
+main{
+    height: 90vh;
+    width: 100vw;
+
+    display: flex;
+}
+main .seccion1{
+    max-width: 50%;
+    padding: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .seccion1 img{
+    aspect-ratio: 1;
+    object-fit: cover;
+
+    border-radius: 50px;
+    width: 100%;
+}
+main .seccion2{
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #F3F3F3;
+}
+main .seccion2 form{
+    width: 100%;
+    padding: 20%;
+}
+main .seccion2 form input[type="submit"]{
+    background-color: var(--morado-principal);
+    color: white;
+    font-size: 1.2vw;
+}
+
+
+/* ---- BOTONES REDES LOGIN ---- */
+.seccion2 form p{
+    text-align: center;
+    margin: 3% 0;
+    font-size: .7rem;
+}
+.seccion2 form .links{
+    text-decoration: none;
+    color: #794cf8;
+    font-size: .7rem;
+}
+.seccion2 form .loginRedes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+
+    background-color: white;
+
+    padding: 4%;
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: black;
 }
