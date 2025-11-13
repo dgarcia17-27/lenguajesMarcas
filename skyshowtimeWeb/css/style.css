@@ -13,6 +13,7 @@
 
 /* COLORES CORP. */
 :root{
+    --morado-clarito: #bcaef2;
     --morado-color: #795fe3;
     --gris-color: #323538a3;
     --gris-oscuro: #1D1E20;
@@ -20,12 +21,11 @@
     --blanco-roto: #f4f4f4;
 }
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: "SkyRegular",Arial, Helvetica, sans-serif;
 }
 
@@ -40,16 +40,16 @@ header{
 
 /* ------ LOGO ------ */
 .logo img{
-    min-width: 4vw;
-    width: 4vw;
+    min-width: 6vw;
+    width: 7.5vw;
 }
 
 /* ------ BOTONES HEADER ------ */
 .botones{
     display: flex;
     justify-content: right;
-    width: 100%;
-    gap: .7%;
+    width: 70%;
+    gap: 1.5%;
 }
 .botones a{
     font-family: "SkyLight",Arial, Helvetica, sans-serif;
@@ -141,7 +141,11 @@ main .formulario form input[type="submit"]{
     border: none;
     border-radius: 10000px;
 
-    background-color: var(--morado-color);
+    background-color: var(--morado-clarito);
+
+    &:hover{
+        background-color: var(--morado-color);
+    }
 }
 
 
@@ -155,19 +159,17 @@ footer{
     justify-content: space-evenly;
 }
 
-/* ------ TEXTO LEGAL ------ */
+/* ------ ENLACES ------ */
 .legalesRedes{
     display: flex;
+    justify-content: space-between;
 }
 .legalesRedes .child1{
-    min-width: 85%;
-    width: 85%;
-}
-.legalesRedes .child1 ul{
+    min-width: 45%;
+    width: 65%;
 }
 .legalesRedes .child1 ul li{
     display: inline;
-    
 }
 .legalesRedes .child1 ul li a{
     text-decoration: none;
@@ -181,9 +183,10 @@ footer{
 }
 
 .legalesRedes .child2{
+    float: right;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    max-width: 30%;
+    max-width: 15%;
     gap: 10px;
 }
 .legalesRedes .child2 a{
